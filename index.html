@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zona Deportiva</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #005bb5;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .media-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .media-section div {
+      flex: 1 1 300px;
+    }
+
+    .interactive-map {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    footer {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    img, video {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    h2 {
+      color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zona Deportiva</h1>
+    <p>Tu portal de noticias, videos y entretenimiento del mundo del deporte</p>
+  </header>
+
+  <nav>
+    <a href="#videos">Videos</a>
+    <a href="#imagenes">Imágenes</a>
+    <a href="#audio">Audios</a>
+    <a href="#mapa">Mapa</a>
+  </nav>
+
+  <main>
+    <section class="media-section" id="videos">
+      <div>
+        <h2>Video Destacado</h2>
+        <video controls>
+          <source src="Cr7.mp4" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+
+      <div>
+        <h2>Audio Comentario</h2>
+        <audio controls>
+          <source src="Mariano.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio HTML5.
+        </audio>
+      </div>
+    </section>
+
+    <section class="media-section" id="imagenes">
+      <div>
+        <h2>Imagen del Día</h2>
+        <img src="Pessi.jpg" alt="Deporte destacado">
+      </div>
+
+      <div>
+        <h2>Galería Interactiva</h2>
+        <div class="interactive-map">
+          <img src="Cancha.png" alt="Cancha" usemap="#canchaMap" width="500" />
+
+          <map name="canchaMap">
+            <area shape="rect" coords="50,50,150,150" href="https://es.wikipedia.org/wiki/Portero_(fútbol)" alt="Portero" target="_blank" title="Portero" />
+            <area shape="rect" coords="200,50,300,150" href="https://es.wikipedia.org/wiki/Defensa_(fútbol)" alt="Defensa" target="_blank" title="Defensa" />
+            <area shape="rect" coords="350,50,450,150" href="https://es.wikipedia.org/wiki/Delantero_(fútbol)" alt="Delantero" target="_blank" title="Delantero" />
+          </map>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zona Deportiva | Síguenos en 
+      <a href="https://instagram.com" style="color: #fff; text-decoration: underline;" target="_blank">Instagram</a> y 
+      <a href="https://youtube.com" style="color: #fff; text-decoration: underline;" target="_blank">YouTube</a>
+    </p>
+  </footer>
+</body>
+</html>
